@@ -7,8 +7,7 @@
     <meta name="description" content="The Cryptosphere provides an encrypted peer-to-peer application platform for HTML5/JS applications">
     <meta name="author" content="Tony Arcieri">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -19,26 +18,27 @@
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">CRYPTOSPHERE</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="https://github.com/cryptosphere/cryptosphere">Github</a></li>
-              <li><a href="https://github.com/cryptosphere/cryptosphere/wiki">Wiki</a></li>
-              <li><a href="https://github.com/cryptosphere/cryptosphere/wiki/FAQ">FAQ</a></li>
-            </ul>
-         </div><!--/.nav-collapse -->
+          <a class="navbar-brand" href="#">CRYPTOSPHERE</a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="https://github.com/cryptosphere/cryptosphere">Github</a></li>
+            <li><a href="https://github.com/cryptosphere/cryptosphere/wiki">Wiki</a></li>
+            <li><a href="https://github.com/cryptosphere/cryptosphere/wiki/FAQ">FAQ</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
       </div>
-    </div>
+    </nav>
 
     <div class="jumbotron masthead">
       <h1>The Web. Secured.</h1>
@@ -52,37 +52,37 @@
 
     <div class="container">
       <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
           <h2>Git-powered</h2>
           <a href="http://git-scm.com/"><img src="img/git.png" alt="Git"></a>
           <p>Uploading content to the Cryptosphere's peer-to-peer grid is just a "git push" away. Content is fully encrypted before ever leaving your computer.</p>
-          <p><a class="btn" href="http://git-scm.com/">Learn more &raquo;</a></p>
+          <p><a class="btn btn-default" href="http://git-scm.com/">Learn more &raquo;</a></p>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
           <h2>In-Browser Sandboxing</h2>
           <a href="https://github.com/tildeio/oasis.js"><img src="img/oasis.png" alt="Oasis"></a>
           <p>HTML/JS applications loaded from the Cryptosphere are sandboxed in-browser using a capability-based security model.</p>
-          <p><a class="btn" href="https://github.com/tildeio/oasis.js">Learn more &raquo;</a></p>
+          <p><a class="btn btn-default" href="https://github.com/tildeio/oasis.js">Learn more &raquo;</a></p>
        </div>
-        <div class="span4">
+        <div class="col-md-4">
           <h2>Modern Encryption</h2>
           <a href="http://github.com/cryptosphere/rbnacl"><img src="img/rbnacl.png" alt="Oasis"></a>
           <p>State-of-the-art encryption ensures all content in the system is
           kept confidential and free of tampering, even when stored on a
           peer-to-peer grid.</p>
-          <p><a class="btn" href="https://github.com/cryptosphere/rbnacl">Learn more &raquo;</a></p>
+          <p><a class="btn btn-default" href="https://github.com/cryptosphere/rbnacl">Learn more &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; 2014 Tony Arcieri</p>
+        <p>&copy; 2011-2015 Tony Arcieri</p>
       </footer>
 
     </div> <!-- /container -->
 
-    <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/google-analytics.js"></script>
   </body>

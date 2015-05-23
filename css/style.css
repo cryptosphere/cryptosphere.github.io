@@ -6,10 +6,9 @@ body {
   padding: 5px;
 }
 
-.navbar-inverse .brand {
+.navbar-inverse .navbar-brand {
   color: white;
   font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
 }
 
 /* Jumbotrons
